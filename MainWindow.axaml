@@ -1,0 +1,23 @@
+<!-- 
+Project Prologue
+Name: Carter Quesenberry
+Date: 7/30/2024
+Purpose: Lab #09 Disk File Line Count
+
+I declare that the following code was written by me or provided 
+by the instructor for this project. I understand that copying source 
+code from any other source constitutes plagiarism, and that I will receive 
+a zero on this project if I am found in violation of this policy.
+-->
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="LineCounterApp.MainWindow"
+        Title="Disk File Line Count">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBox Name="FilePathTextBox" Width="400" Watermark="Enter file path here..." HorizontalAlignment="Center"/>
+        <Button Name="CountLinesButton" Content="Count Lines" Click="OnCountLinesButtonClick" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+        <TextBlock Name="RunningLineCountTextBlock" Text="Running Count: 0" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+        <TextBlock Name="FinalLineCountTextBlock" Text="Final Count: 0" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
